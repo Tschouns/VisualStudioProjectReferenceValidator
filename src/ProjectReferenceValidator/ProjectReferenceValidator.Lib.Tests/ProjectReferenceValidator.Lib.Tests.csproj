@@ -24,6 +24,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ExampleProjectFiles.resx</DependentUpon>
     </Compile>
+    <Compile Update="TestData\ExampleRulesetFiles.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ExampleRulesetFiles.resx</DependentUpon>
+    </Compile>
     <Compile Update="TestData\ExampleSolutionFiles.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -35,6 +40,10 @@
     <EmbeddedResource Update="TestData\ExampleProjectFiles.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ExampleProjectFiles.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TestData\ExampleRulesetFiles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExampleRulesetFiles.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="TestData\ExampleSolutionFiles.resx">
       <Generator>ResXFileCodeGenerator</Generator>

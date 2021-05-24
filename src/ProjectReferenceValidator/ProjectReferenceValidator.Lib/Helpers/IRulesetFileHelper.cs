@@ -9,17 +9,6 @@ namespace ProjectReferenceValidator.Lib.Helpers
     public interface IRulesetFileHelper
     {
         /// <summary>
-        /// Saves the specified ruleset in the specified ruleset file.
-        /// </summary>
-        /// <param name="rulesetFile">
-        /// The file where the ruleset is saved
-        /// </param>
-        /// <param name="ruleset">
-        /// The ruleset to save
-        /// </param>
-        void SaveRuleset(string rulesetFile, IReadOnlyList<Rule> ruleset);
-
-        /// <summary>
         /// Loads the ruleset from the specified file.
         /// </summary>
         /// <param name="rulesetFile">
@@ -29,5 +18,16 @@ namespace ProjectReferenceValidator.Lib.Helpers
         /// The ruleset file
         /// </returns>
         IReadOnlyList<Rule> LoadRuleset(string rulesetFile);
+
+        /// <summary>
+        /// Saves the specified ruleset in the specified ruleset file.
+        /// </summary>
+        /// <param name="rulesetFile">
+        /// The file where the ruleset is saved
+        /// </param>
+        /// <param name="ruleset">
+        /// The ruleset to save
+        /// </param>
+        void SaveRuleset(string rulesetFile, IReadOnlyList<Rule> ruleset);
     }
 }

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rules>
+    <Rule>
+      <ProjectA>*Impl.csproj</ProjectA>
+      <ProjectB>*Tests.csproj</ProjectB>
+      <Type>MustNotReference</Type>
+    </Rule>
+    <Rule>
+      <ProjectA>*Impl.csproj</ProjectA>
+      <ProjectB>*Impl.csproj</ProjectB>
+      <Type>MustNotReference</Type>
+    </Rule>
+    <Rule>
+      <ProjectA>Special.Impl.csproj</ProjectA>
+      <ProjectB>ExtraSpecial.Impl.csproj</ProjectB>
+      <Type>CanReference</Type>
+    </Rule>
+  </Rules>
+</Ruleset>
